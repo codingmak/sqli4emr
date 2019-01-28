@@ -37,17 +37,8 @@ try:
  
     print "Logging in to admin\n-----\n"
 
-    # setup toolbar
-    sys.stdout.write("[%s]" % (" " * toolbar_width))
-    sys.stdout.flush()
-    sys.stdout.write("\b" * (toolbar_width+1)) 
+   
 
-    for i in xrange(toolbar_width):
-        time.sleep(0.1) 
-        sys.stdout.write("*")
-        sys.stdout.flush()
-
-    sys.stdout.write("\n")
  
  
     br.form["authUser"] = "admin"
